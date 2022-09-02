@@ -14,7 +14,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <strong class="text-dark">Aulas</strong>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aula01.php">Aula 01</a>
@@ -26,9 +26,11 @@
             <a class="nav-link" href="aula03.php">Aula 03</a>
           </li>
           <hr>
-          <strong class="text-dark">Exercícios</strong>
           <li class="nav-item">
-            <a class="nav-link" href="ex01.php">Ex01</a>
+            <strong class="text-dark">Exercícios</strong>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ex01.php">Exercício 01</a>
           </li>
         </ul>
       </div>

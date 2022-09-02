@@ -51,6 +51,97 @@
       echo "Pós-Decremento<br>";
       $n2--; // --$n2; PRÉ
       echo "<h6>Valor de n2: " . $n2 . "</h6><hr>";
+
+      // Operadores de Comparação
+      # Permitem a comparação entre valores
+      # Verificam igualdade, diferença, maior, menor ou de mesmo tipo
+      # Resultado da comparação será sempre um boolean (F/T) ou (0/1)
+      echo "<p class='display-6'>Operadores de Comparação</p>";
+      // Operador de Igualdade
+      $n3 = (2 == 3); #False
+      $n3 = (100 == 100); #True
+      $n3 = (50 == '50'); #True - Neste caso ocorre uma verificação de igualdade sem a verificação de tipo de variável, somente a comparação de conteúdo (Int para String)
+      $n3 = (50 === '50'); #False - Neste caso ocorre a verificação de igualdade e também do tipo de variável;
+      # Não conseguimos visualizar o resultado (True ou False), apenas a existência dele.
+      echo "Operador de Igualdade: 2 == 3<br>";
+      $n3 = (2 == 3);
+
+      if($n3){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Igualdade: 2 == 2<br>";
+      $n4 = (2 == 2);
+
+      if($n4){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Igualdade: 2 === '2'<br>";
+      $n4 = (2 === '2');
+
+      if($n4){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Diferença: 2 != 3<br>";
+      $n5 = (2 != 3);
+
+      if($n5){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Diferença: 2 != 2<br>";
+      $n6 = (2 != 2);
+
+      if($n6){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Forma Alternativa da Anterior: 10 <> 10<br>";
+      $n7= (10 <> 10);
+
+      if($n7){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Diferença: 2 != '2'<br>"; 
+      $n8 = (2 != '2'); // Só é verificado o valor, não o tipo de variável
+
+      if($n8){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+      echo "Operador de Diferença: 2 !== '2'<br>";
+      $n9 = (2 !== '2'); // É verificado o tipo de dado e seu tipo de variável
+
+      if($n9){
+        echo "<strong>True</strong><br><br>";
+      }else{
+        echo "<strong>False</strong><br><br>";
+      }
+
+
+
+
+
+
+
+
     ?>
     </div>
 </body> 
