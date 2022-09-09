@@ -20,6 +20,12 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>Operadores de Incremento e Decremento</li>
 <li>Operadores de Comparação</li>
 
+<h2>Aula04</h2>
+<li>Declarações / Instruções Condicionais</li>
+<li>Spaceship Operator</li>
+<li>Operadores Lógicos</li>
+<li>Manipulação de Strings</li>
+
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
 <ol type="a">
