@@ -25,6 +25,9 @@
           <li class="nav-item">
             <a class="nav-link" href="aula03.php">Aula 03</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula04.php">Aula 04</a>
+          </li>
           <hr>
           <li class="nav-item">
             <strong class="text-dark">Exercícios</strong>
