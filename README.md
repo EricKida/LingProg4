@@ -40,3 +40,6 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
   <li>Divisão; Produto; Potência Combinados</li>
   <li>Pós e Pré Incremento e Decremento</li>
 </ol>
+  
+<h2>Ex02</h2>
+  <h4>Desenvolve uma estrutura básica de Switch</h4>
