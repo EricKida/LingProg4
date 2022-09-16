@@ -26,9 +26,14 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>Operadores Lógicos</li>
 <li>Manipulação de Strings</li>
 
+<h2>Aula05</h2>
+<li>Declarações / Instruções Condicionais</li>
+<li>Array (Númerico, String, Misto)</li>
+<li>Estrutura Switch</li>
+
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
-<ol type="a">
+<ol type="ex01">
   <li>Atribuição</li>
   <li>Aritmético</li>
   <li>Módulo</li>

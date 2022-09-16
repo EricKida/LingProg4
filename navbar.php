@@ -28,12 +28,18 @@
           <li class="nav-item">
             <a class="nav-link" href="aula04.php">Aula 04</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula05.php">Aula 05</a>
+          </li>
           <hr>
           <li class="nav-item">
             <strong class="text-dark">Exercícios</strong>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ex01.php">Exercício 01</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ex02.php">Exercício 02</a>
           </li>
         </ul>
       </div>
