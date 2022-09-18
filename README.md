@@ -1,5 +1,6 @@
 # LingProg4
 Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC PG
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)&nbsp;
 
 <h2>Aula01</h2>
 <li>Comentários HTML</li>
