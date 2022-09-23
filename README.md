@@ -55,7 +55,7 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 </ol>
 
 <h2>Ex03</h2>
-  <h4>Desenvolve uma Tabuada do 1 ao 10 utilizando</h4>
+  <h4>Desenvolve uma Tabuada do 1 ao 10 utilizando:</h4>
 <ol type="ex03">
   <li>For</li>
   <li>While</li>
