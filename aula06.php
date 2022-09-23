@@ -72,7 +72,7 @@
         echo "<div class='col-sm-2'><table class='text-center'><tr><th>Array</th><th>Ciclo For</th></tr>";
         $nomes = ['Paulo', 'Maria', 'Ana'];
         for($i = 0; $i < sizeof($nomes); $i++){
-            echo "<tr><td>Nome</td><td>" . $nomes[$i] . "</td></tr>";
+            echo "<tr><td>$i</td><td>" . $nomes[$i] . "</td></tr>";
 
         }
 
@@ -98,11 +98,35 @@
         
         # Exemplo 1
         $nomes = ["Mari" , "Ada", "Lena"];
-        echo "<div class='col-sm-12'><table class='text-center'><tr><th>Ciclo foreach</th></tr>";
+        echo "<div class='row'><div class='col-sm-1'><table class='text-center'><tr><th>Ciclo foreach</th></tr>";
         foreach($nomes as $nome){
             echo "<tr><td>" . $nome . "</td></tr>";
         }
         echo "</table></div>";
+
+        # Exemplo 2
+        $x = [1, 3, 4];
+        echo "<div class='col-sm-1'><table class='text-center'><tr><th>Ciclo foreach</th></tr>";
+        foreach($x as $y){
+            echo "<tr><td>" . $y . "</td></tr>";
+        }
+        echo "</table></div>";
+
+        # Exemplo 3
+        # Existe uma assinatura diferente para o FOREACH
+        $estadoCapital = [
+            'Acre' => 'Rio Branco',
+            'Amapa' => 'Macapa',
+            'Alagoas' => 'Maceio',
+            'Ceara' => 'Fortaleza'
+            ];
+        echo "<div class='col-sm-2'><table class='text-center'><tr><th>Estado</th><th>Capital</th></tr>";
+        foreach($estadoCapital as $chave => $value){
+            echo "<tr><td>" . $chave . "</td>";
+            echo "<td>" . $value . "</td></tr>";
+        }
+        echo "</table></div></div>";
+
         echo "<br><hr>";
 
     ?>

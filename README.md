@@ -53,3 +53,12 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
   <li>O usuário deve digitar um número</li>
   <li>O sistema deve fornecer resposta utilizando a estrutura de Switch</li>
 </ol>
+
+<h2>Ex03</h2>
+  <h4>Desenvolve uma Tabuada do 1 ao 10 utilizando</h4>
+<ol type="ex03">
+  <li>a) For</li>
+  <li>a) While</li>
+  <li>a) doWhile</li>
+</ol>
+

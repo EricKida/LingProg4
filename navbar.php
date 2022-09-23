@@ -44,6 +44,9 @@
           <li class="nav-item">
             <a class="nav-link" href="ex02.php">Exercício 02</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ex03.php">Exercício 03</a>
+          </li>
         </ul>
       </div>
     </div>

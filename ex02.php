@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <div class="container-fluid">
         <?php
-        echo "<p class='display-6'>Exemplos de Switch</p>";
+        echo "<p class='display-6'>Exercício com Switch</p>";
         echo '
         <form method="get">
             <div class="col-sm-3">
@@ -28,35 +28,42 @@
 
         ';
 
-        $op = $_GET['op'];
+        $op = 1;
+        if (isset($op)) {
+            if (isset($_GET['op'])) {
+                $op = $_GET['op'];
+                switch ($op) {
 
-        switch ($op) {
+                    case '1':
+                        echo '<h6 class="text-danger">Opção escolhida: </h6>' . $op;
 
-            case '1':
-                echo '<h6 class="text-danger">Opção escolhida: </h6>' . $op;
+                        break;
 
-                break;
+                    case '2':
+                        echo '<h6 class="text-warning">Opção escolhida: </h6>' . $op;
+                        break;
 
-            case '2':
-                echo '<h6 class="text-warning">Opção escolhida: </h6>' . $op;
-                break;
+                    case '3':
+                        echo '<h6 class="text-success">Opção escolhida: </h6>' . $op;
+                        break;
 
-            case '3':
-                echo '<h6 class="text-success">Opção escolhida: </h6>' . $op;
-                break;
+                    case '4':
+                        echo '<h6 class="text-info">Opção escolhida: </h6>' . $op;
+                        break;
 
-            case '4':
-                echo '<h6 class="text-info">Opção escolhida: </h6>' . $op;
-                break;
+                    case '5':
+                        echo '<h6 class="text-primary">Opção escolhida: </h6>' . $op;
+                        break;
 
-            case '5':
-                echo '<h6 class="text-primary">Opção escolhida: </h6>' . $op;
-                break;
-
-            default:
-                echo '<h6 class="text-secondary">Opção escolhida: </h6>' . $op;
-                break;
+                    default:
+                        echo '<h6 class="text-secondary">Opção escolhida: </h6>' . $op;
+                        break;
+                }
+            }
         }
+
+
+
         ?>
     </div>
 </body>
