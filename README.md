@@ -32,6 +32,11 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>Array (Númerico, String, Misto)</li>
 <li>Estrutura Switch</li>
 
+<h2>Aula06</h2>
+<li>While</li>
+<li>DoWhile</li>
+<li>For</li>
+
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
 <ol type="ex01">

@@ -206,4 +206,11 @@
     th, td{
         width: 200px;
     }
+    table{
+        transition: 0.2s ease;
+        transform: scale(1,1);
+    }
+    table:hover{
+        transform: scale(1.05, 1.05);
+    }   
 </style>
