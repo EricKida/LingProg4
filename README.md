@@ -37,6 +37,11 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>DoWhile</li>
 <li>For</li>
 
+<h2>Aula07</h2>
+<li>Função Anônima</li>
+<li>Introdução a Classes</li>
+
+
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
 <ol type="ex01">
@@ -55,10 +60,10 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 </ol>
 
 <h2>Ex03</h2>
-  <h4>Desenvolve uma Tabuada do 1 ao 10 utilizando:</h4>
+  <h4>Desenvolve uma Tabuada do 1 ao 10 utilizando</h4>
 <ol type="ex03">
-  <li>For</li>
-  <li>While</li>
-  <li>doWhile</li>
+  <li>a) For</li>
+  <li>a) While</li>
+  <li>a) doWhile</li>
 </ol>
 

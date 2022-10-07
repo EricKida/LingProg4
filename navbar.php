@@ -16,6 +16,7 @@
           <li class="nav-item">
             <strong class="text-dark">Aulas</strong>
           </li>
+          <li class="nav-item text-dark"> - 1º Bimestre</li>
           <li class="nav-item">
             <a class="nav-link" href="aula01.php">Aula 01</a>
           </li>
@@ -33,6 +34,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aula06.php">Aula 06</a>
+          </li>
+          <li class="nav-item text-dark"> - 2º Bimestre</li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula07.php">Aula 07</a>
           </li>
           <hr>
           <li class="nav-item">
