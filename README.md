@@ -41,6 +41,16 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>Função Anônima</li>
 <li>Introdução a Classes</li>
 
+<h2>Aula08</h2>
+<li>Construct</li>
+<li>Construct sem parâmetros</li>
+
+<h2>Aula09</h2>
+<li>GET</li>
+<li>POST</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>Sanitize</li>
 
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
@@ -67,3 +77,5 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
   <li>a) doWhile</li>
 </ol>
 
+<h2>Projeto</h2>
+<h4>CRUD Processadores Intel x AMD</h4>
