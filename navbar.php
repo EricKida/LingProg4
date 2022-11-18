@@ -42,6 +42,12 @@
           <li class="nav-item">
             <a class="nav-link" href="aula08.php">Aula 08</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula09.php">Aula 09</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula10.php">Aula 10</a>
+          </li>
           <hr>
           <li class="nav-item">
             <strong class="text-dark">Exercícios</strong>
@@ -54,6 +60,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ex03.php">Exercício 03</a>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <strong class="text-dark">Projeto</strong>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projeto/index.php">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aula10Login/index.php" target="_blank">Login</a>
           </li>
         </ul>
       </div>
