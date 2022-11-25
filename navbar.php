@@ -48,6 +48,9 @@
           <li class="nav-item">
             <a class="nav-link" href="aula10.php">Aula 10</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aula11.php">Aula 11</a>
+          </li>
           <hr>
           <li class="nav-item">
             <strong class="text-dark">Exercícios</strong>
@@ -70,6 +73,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Aula10Login/index.php" target="_blank">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aula11ConexaoSQL/public/index.php" target="_blank">Conexao Banco</a>
           </li>
         </ul>
       </div>

@@ -58,6 +58,10 @@ Atividades/Exemplos de códigos da aula de Linguagem de Programação 4 da FATEC
 <li>_once</li>
 <li>Sessões</li>
 
+<h2>Aula11</h2>
+<li>Conexão com phpmyadmin</li>
+
+
 <h2>Ex01</h2>
 <h4>Escrever um programa documentado que apresente operadores de:</h4>
 <ol type="ex01">
