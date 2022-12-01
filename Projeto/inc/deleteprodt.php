@@ -3,13 +3,11 @@ session_start();
 require_once 'config.php';
 
 // Transforma todos os dados em variáveis locais
-$n  = $_POST['nm_ssd'];
-$nm = $_POST['nm_marca_ssd'];
-$qt = $_POST['qt_armazenamento_ssd'];
-$vl = $_POST['vl_preco_ssd'];
- 
+$c =  $_POST['cd_ssd'];
+
 // Insert no Banco de Dados utilizando MySQLI
-$sql = "INSERT INTO ssd (cd_ssd, nm_ssd, nm_marca_ssd, qt_armazenamento_ssd, vl_preco_ssd) VALUES (NULL, '$n', '$nm', '$qt', '$vl')";
+$sql = "DELETE FROM ssd 
+        WHERE cd_ssd='$c'";
 if (mysqli_query($conn, $sql)) {
   // Se ocorrer tudo dentro do previsto, o usuário é redirecionado para a página inicial (ele não percebe alterações)
   header("location: ../index.php");
