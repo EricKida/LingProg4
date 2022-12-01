@@ -1,6 +1,7 @@
 <?php
 // Inicia Sessão
 session_start();
+unset($_SESSION['op']);
 
 // Verifica se usuário está logado, se não redireciona para a página de login
 if (isset($_POST["user"]) || isset($_SESSION['user'])) {

@@ -10,7 +10,7 @@ $qt = $_POST['qt_armazenamento_ssd'];
 $vl = $_POST['vl_preco_ssd'];
 $_SESSION['c'] = $_POST['cd_ssd'];
  
-// Insert no Banco de Dados utilizando MySQLI
+// Update do Produto com baseado no que foi informado no $_POST
 $sql = "UPDATE ssd 
         SET nm_ssd='$n', nm_marca_ssd='$nm', qt_armazenamento_ssd='$qt', vl_preco_ssd='$vl' 
         WHERE cd_ssd='$c'";

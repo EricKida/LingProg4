@@ -13,6 +13,7 @@
             aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <!-- Botão de Logout -->
                 <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exitLogin"><i
                         class="bi bi-box-arrow-left"></i> Sair</button>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -25,6 +26,7 @@
                         <a class="nav-link active" href="index.php">Home</a>
                     </li>
                 </ul>
+                <!-- Adicionar Produto -->
                 <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalAdd"
                     style="width:100%" title="Adicionar Item">
                     <b>+</b>
@@ -34,6 +36,7 @@
     </div>
 </nav>
 
+<!-- Modal de Confirmação de Logout -->
 <div class="modal fade" id="exitLogin" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -57,6 +60,7 @@
     </div>
 </div>
 
+<!-- Modal de Adição de Produto -->
 <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

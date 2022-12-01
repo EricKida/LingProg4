@@ -5,7 +5,7 @@ require_once 'config.php';
 // Transforma todos os dados em variáveis locais
 $c =  $_POST['cd_ssd'];
 
-// Insert no Banco de Dados utilizando MySQLI
+// Delete no Produto baseado no que foi informado no $_POST
 $sql = "DELETE FROM ssd 
         WHERE cd_ssd='$c'";
 if (mysqli_query($conn, $sql)) {
