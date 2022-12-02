@@ -19,8 +19,9 @@ require_once 'inc/config.php';
 $dados = $admin->query("SELECT * FROM ssd");
 $produto = $dados->fetchALL(PDO::FETCH_ASSOC);
 
-// Variável para Incremento
-$qtt = 0;
+if(isset($_POST['deleteHistoric'])){
+    unset($_SESSION['contas']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -43,47 +44,42 @@ $qtt = 0;
     <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
-<body>
+<body class="bg-secondary">
     <!-- IMPORTA A NAVBAR -->
     <?php require_once "inc/navbar.php" ?>
 
     <div class="col-sm-12 container-fluid mt-5 pt-4">
-        <div class="row">
-            <div class="row">
-                <!-- Início do Foreach para exibir todos os produtos listados no banco de dados -->
-                <?php foreach ($produto as $prodt): ?>
-                <div class="col-6 mt-3">
-                    <div class="card" id="<?= $prodt["cd_ssd"] ?>">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <?= $prodt["nm_ssd"] ?>
-                            </h5>
-                            <li><b>Marca: </b>
-                                <?= $prodt["nm_marca_ssd"] ?>
-                            </li>
-                            <li><b>Espaço: </b>
-                                <?= $prodt["qt_armazenamento_ssd"] ?> GB
-                            </li>
-                            <li><b>Preço: </b>R$ <?= $prodt["vl_preco_ssd"] ?>,00</li>
-                            <form action="calc.php" method="POST">
-                                <!-- Esse botão envia para o método POST o número de qual elemento pertence para depois ser recuperado na próxima página -->
-                                <button value="<?= $prodt["cd_ssd"] ?>" name="cd" type="submit"
-                                    class="btn btn-primary mt-4" style="width:100%"></i>Ver Item</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fim do Foreach para exibir todos os produtos listados no banco de dados -->
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col" class="text-center">Histórico de Operações</th>
+                </tr>
+            </thead>
+            <tbody>
                 <?php
-                // Incremento
-                    $qtt++;
-                endforeach;
-                echo "<h5 class='text-center mt-4 pb-3'><b>Total de Produtos:</b> $qtt</h5>";
+                $contagem = 0;
+                for ($i = 1; $i <= 31; $i++) {
+                    if (isset($_SESSION['contas'][$i])) {
+                        echo "<tr><td class='text-center'>$i</td>";
+                        echo "<td class='text-center'>" . $_SESSION['contas'][$i] . "</td><tr>";
+                        $contagem++;
+                    }
+                }
+                if($contagem != 0){
+
+                }else{
+                    echo "<tr><td class='text-center'>?</td><td class='text-center'>Histórico Vazio</td></tr>";
+                }
                 ?>
-            </div>
-        </div>
+            </tbody>
+        </table>
+        <form method="post" action="">
+            <button class="btn btn-danger container-fluid mb-3" name="deleteHistoric" value='$x'>Limpar Histórico <i
+                    class='bi bi-trash-fill'></i></button>
+        </form>
     </div>
 </body>
 
+</html>
 
-</html> 

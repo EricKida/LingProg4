@@ -53,7 +53,5 @@ class CalculadoraValor
 # Instancia a classe CALCULADORA()
 $calcular = new CalculadoraValor();
 
-# Executa a função
-echo $calcular->Calcular();
 
 ?>

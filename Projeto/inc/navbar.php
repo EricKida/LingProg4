@@ -25,6 +25,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historic.php">Histórico</a>
+                    </li>
                 </ul>
                 <!-- Adicionar Produto -->
                 <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalAdd"

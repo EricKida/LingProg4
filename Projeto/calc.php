@@ -2,8 +2,20 @@
 // Inicia Sessão
 session_start();
 
+// Verifica se usuário está logado, se não redireciona para a página de login
+if (isset($_POST["user"]) || isset($_SESSION['user'])) {
+    if (isset($_POST["user"])) {
+        $_SESSION['user'] = $_POST["user"];
+    }
+} else {
+    header("location: login.php");
+}
+
 // Chamar o arquivo que contém a configuração de conexão com o Banco de Dados - Acessa BD
 require_once 'inc/config.php';
+
+// Chama o arquivo que contém as classes - Classes 
+require_once 'inc/classes.php';
 
 // Puxa o código do produto pelo name="cd" via POST 
 if (isset($_POST['cd'])) {
@@ -36,7 +48,7 @@ if(isset($_POST['op'])){
         $op = $_SESSION['op'];
     }
 }else{
-    $op = 1;
+    $op = 3;
 }
 
 // De acordo com o que foi escolhido no IF, o Switch determina o que vai aparecer para cada caso - Switch
@@ -47,14 +59,22 @@ switch($op){
         $opTitulo = "Valor do Produto";
         $activeOp1 = "active";
         $activeOp2 = "";
+        $disabledButton = "";
         break;
     case "2":
         $opModelo = $armazenamentoProduto;
         $opTitulo = "Armazenamento do Produto";
         $activeOp2 = "active";
         $activeOp1 = "";
+        $disabledButton = "";
         break;
-
+    default:
+        $opModelo = "0";
+        $opTitulo = "Escolha a Operação";
+        $activeOp1 = "";
+        $activeOp2 = "";
+        $disabledButton = "disabled";
+        break;
 }     
 ?>
 <!DOCTYPE html>
@@ -178,7 +198,7 @@ switch($op){
                             <input type="number" class="form-control" name="n2" required>
                         </div>
                     </div>
-                    <button class="btn btn-primary mt-2 container-fluid" type="submit" name="Calc">Calcular</button>
+                    <button class="btn btn-primary mt-2 container-fluid" type="submit" name="Calc" <?= $disabledButton ?>>Calcular</button>
                 </form>
             </div>
             <div class="col-sm-6 container-fluid mt-5">
@@ -187,7 +207,15 @@ switch($op){
                 <h5 class="text-center">
                     <?php
                     if (isset($_POST['Calc'])) {
-                        require_once 'inc/classes.php';
+                        # Executa a função
+                        echo $calcular->Calcular();
+                        for($i = 1; $i <= 30; $i++){
+                            if(isset($_SESSION['contas'][$i])){
+                            }else{
+                                $_SESSION['contas'][$i] = $calcular->Calcular();
+                                $i = 31;
+                            }
+                        }
                     } else {
                         echo "Nenhum valor";
                     }
